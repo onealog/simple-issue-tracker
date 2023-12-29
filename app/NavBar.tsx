@@ -1,16 +1,16 @@
 'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { FaBug } from "react-icons/fa";
-import classNames from "classnames";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { FaBug } from 'react-icons/fa';
+import classNames from 'classnames';
 
-const NavBar = () => {
+function NavBar() {
   const pathname = usePathname();
 
   const links = [
-    { name: "Dashboard", href: "/" },
-    { name: "Issues", href: "/issues" },
+    { name: 'Dashboard', href: '/' },
+    { name: 'Issues', href: '/issues' },
   ];
 
   return (
@@ -34,7 +34,7 @@ const NavBar = () => {
         ))}
       </ul>
     </nav>
-  )
-};
+  );
+}
 
 export default NavBar;
