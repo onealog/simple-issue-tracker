@@ -12,7 +12,7 @@ function NewIssuePage() {
         <TextField.Input placeholder="Search the docs…" />
       </TextField.Root>
       <TextArea placeholder="Reply to comment…" />
-      <Button type="button" className="cursor-pointer">Submit New Issue</Button>
+      <Button style={{ cursor: 'pointer' }}>Submit New Issue</Button>
     </Flex>
   );
 }
